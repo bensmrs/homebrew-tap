@@ -14,6 +14,12 @@ class MinimalRacketBc < Formula
     regex(/["'][^"']*?racket(?:-minimal)?[._-]v?(\d+(?:\.\d+)+)-src\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/bensmrs/homebrew-tap/releases/download/minimal-racket-bc-8.10"
+    sha256 ventura:      "e99895bc043bed905d635ca3f61d0cbd40db02e2883f6468567aaea45aef7fce"
+    sha256 x86_64_linux: "7861ff5a0c244bdea5dbe6c1ed99f157a4f55a1412d319caf53c642285d8c693"
+  end
+
   depends_on "libffi"
   depends_on "openssl@1.1"
 
